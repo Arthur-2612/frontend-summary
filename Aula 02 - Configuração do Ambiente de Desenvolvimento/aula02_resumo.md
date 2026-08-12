@@ -1,88 +1,141 @@
 # Aula 02 — Configuração do Ambiente de Desenvolvimento
 
-**Disciplina:** Frameworks Front-end
-**Foco:** Preparação do ambiente, versionamento, Git, Node.js, React e deploy
+Repositório de anotações da disciplina de **Frameworks Front-end**, com foco na configuração do ambiente de desenvolvimento, versionamento de código, Git, Node.js, React e deploy de aplicações.
+
 **Professor:** Prof. Me. Deivison S. Takatu
 
 ---
 
-## Conteúdos
+## 📌 Conteúdos da Aula
 
-- Versionamento e SemVer
-- Git e GitHub
-- Tags, Branches e boas práticas
-- Visual Studio Code
+- Introdução ao Versionamento
+- Versionamento Semântico (SemVer)
+- Git e Controle de Versão
+- Tags, Branches e Boas Práticas no Git
+- IDE e Visual Studio Code
 - Node.js e NPM
-- Criação de projetos React
-- Deploy com Vercel
+- Criação de Projetos React
+- Deploy e Hospedagem com Vercel
+- Atividade Prática
 
 ---
 
-## Versionamento
+## 1. Versionamento
 
-O versionamento permite controlar e registrar as alterações realizadas em um projeto, facilitando a colaboração, auditoria e recuperação de versões anteriores.
+Processo de atribuir um identificador único a cada versão de um projeto, registrando **o que** foi alterado, **quem** alterou, **quando** e permitindo recuperar versões anteriores.
 
-### SemVer
+### Versionamento x Backup
 
-Utiliza o padrão:
+| Versionamento | Backup |
+|---|---|
+| Mantém o histórico das alterações | Mantém uma cópia do estado atual |
+| Registra quem, quando e por que mudou | Não possui rastreabilidade detalhada |
+| Permite colaboração simultânea | Normalmente trabalha com cópias |
+| Permite reversão granular | Geralmente restaura o estado completo |
 
-\`\`\`
-MAJOR.MINOR.PATCH
-\`\`\`
-
-- **MAJOR**: mudança incompatível.
-- **MINOR**: nova funcionalidade compatível.
-- **PATCH**: correção de bugs.
-
-**Exemplo:**
-
-\`\`\`
-1.0.0 → versão estável
-1.1.0 → nova funcionalidade
-1.1.1 → correção de bug
-2.0.0 → mudança incompatível
-\`\`\`
+### Benefícios
+- Trabalho simultâneo entre desenvolvedores
+- Redução de retrabalho e conflitos
+- Auditoria, rastreabilidade e recuperação de versões
+- Maior controle de qualidade do software
 
 ---
 
-## Git
+## 2. SemVer (Versionamento Semântico)
 
-O Git é utilizado para controlar versões e acompanhar as alterações do projeto.
+Padrão: **MAJOR.MINOR.PATCH**
 
-### Configuração inicial
+\`\`\`
+2.1.3
+\`\`\`
 
+- **MAJOR** → mudança incompatível (ex: `2.0.0`)
+- **MINOR** → nova funcionalidade compatível (ex: `1.1.0`)
+- **PATCH** → correção de bug (ex: `1.0.1`)
+
+**Exemplo de evolução:**
+\`\`\`
+1.0.0 → Primeira versão estável
+1.1.0 → Nova funcionalidade compatível
+1.1.1 → Correção de bug
+2.0.0 → Mudança incompatível
+\`\`\`
+
+**Tipos de alterações:** Bug Fix, New Feature, Feature Enhancement, Refactoring, Performance, Security Patch, Dependency Update, Adding Tests.
+
+---
+
+## 3. Git
+
+Sistema de controle de versão para registrar e gerenciar alterações nos arquivos do projeto.
+
+**Verificar instalação:**
+\`\`\`bash
+git --version
+\`\`\`
+
+**Configuração inicial:**
 \`\`\`bash
 git config --global user.name "<Nome>"
 git config --global user.email "<Email>"
 \`\`\`
 
-### Boas práticas
-
-- Fazer commits pequenos e frequentes;
-- Utilizar mensagens claras;
-- Utilizar branches para novas funcionalidades;
-- Testar antes de realizar merge.
-
 ---
 
-## Node.js e NPM
+## 4. Tags no Git
 
-O **Node.js** permite executar JavaScript no servidor.
+Marcadores utilizados para identificar pontos específicos do histórico, geralmente releases (ex: `v1.0.0`).
 
-O **NPM** gerencia pacotes e dependências do projeto, utilizando principalmente o `package.json`.
+- **Lightweight** → apenas identifica um commit
+- **Annotated** → armazena autor, data e mensagem
 
-### Verificar instalação
-
+**Comandos:**
 \`\`\`bash
-node --version
-npm --version
+git tag                # listar tags
+git tag 1.0.0           # criar tag
+git push origin 1.0.0   # enviar tag ao remoto
 \`\`\`
 
 ---
 
-## React
+## 5. Boas Práticas com Git
 
-### Criação de um projeto
+- Commits **pequenos e frequentes**
+- Mensagens **claras**, indicando o que e por que mudou
+- Uso de **branches** para novas funcionalidades sem afetar a branch principal
+- **Testar** antes de fazer merge
+
+---
+
+## 6. VS Code
+
+IDE que reúne ferramentas para desenvolver, testar, executar e depurar software. Oferece diversos recursos por meio de extensões.
+
+---
+
+## 7. Node.js
+
+Ambiente de execução JavaScript no lado do servidor, permitindo usar JS tanto no Front-end quanto no Back-end.
+
+\`\`\`bash
+node --version
+\`\`\`
+
+---
+
+## 8. NPM
+
+Gerenciador de pacotes do Node.js — instala, atualiza e remove dependências.
+
+Principal arquivo: **`package.json`**
+
+\`\`\`bash
+npm install
+\`\`\`
+
+---
+
+## 9. Criando um Projeto React
 
 \`\`\`bash
 npx create-react-app meu-projeto-react
@@ -91,31 +144,77 @@ code .
 npm start
 \`\`\`
 
-### Principais diretórios e arquivos
+> `npx` executa pacotes sem instalá-los globalmente. `create-react-app` gera a estrutura inicial (build, Babel, servidor local, scripts, etc.).
+
+---
+
+## 10. Estrutura do Projeto React
+
+| Item | Função |
+|---|---|
+| `node_modules/` | Pacotes e dependências instaladas |
+| `public/` | Arquivos públicos (HTML, JSON, imagens) |
+| `src/` | Código JavaScript e React da aplicação |
+| `.gitignore` | Define o que o Git deve ignorar |
+| `package.json` | Dependências e informações do projeto |
+| `package-lock.json` | Registro exato das dependências instaladas |
+
+### Principais arquivos
+- **`index.js`** → ponto de entrada; renderiza `App` no DOM
+- **`App.js`** → componente raiz da aplicação
+- **`App.css`** → estilos do componente App
+- **`index.css`** → estilos globais
+
+---
+
+## 11. Deploy
+
+Processo de colocar a aplicação em produção: compilação, configuração do ambiente, testes finais e publicação.
+
+---
+
+## 12. Vercel
+
+Plataforma de deploy e hospedagem de aplicações modernas.
+
+**Principais recursos:**
+- Integração com GitHub
+- Deploy automático após push
+- CDN global e escalabilidade automática
+- Rollback e Serverless Functions
+
+---
+
+## 13. Fluxo Completo
 
 \`\`\`
-node_modules/ → dependências
-public/       → arquivos públicos
-src/          → código React
-App.js        → componente principal
-index.js      → entrada da aplicação
-package.json  → dependências e scripts
+VS Code → Desenvolvimento React → Git → Commit → Push → GitHub → Vercel → Deploy → Aplicação Online
 \`\`\`
 
 ---
 
-## Deploy com Vercel
+## ✅ Atividade Prática
 
-**Deploy** é o processo de disponibilizar uma aplicação em produção. A **Vercel** permite conectar o projeto ao GitHub e realizar deploys automaticamente após novos `pushes`
+1. Desenvolver uma aplicação React
+2. Versionar o projeto com Git
+3. Realizar commit e push para o GitHub
+4. Conectar o repositório à Vercel
+5. Fazer o deploy e disponibilizar a URL pública
 
-### Fluxo
+## 👥 Atividade em Grupo
 
-\`\`\`
-VS Code → Git → GitHub → Vercel → Aplicação Online
-\`\`\`
+Elaborar relatório técnico em PDF (mín. 5 páginas) sobre um framework Front-end, contendo: características, vantagens, aplicações no mercado e exemplo de uso.
 
 ---
 
-## Atividade
+## 📝 Resumo
 
-Desenvolver uma aplicação React, versioná-la com Git, publicar no GitHub e realizar o deploy utilizando a Vercel.
+\`\`\`
+Versionamento → Git → GitHub → Node.js + NPM → React → Vercel → Deploy
+\`\`\`
+
+Esses conceitos formam a base para organizar projetos, trabalhar em equipe, controlar alterações e publicar aplicações Web.
+
+---
+
+**Referência:** Material da disciplina Frameworks Front-end — Configuração do Ambiente de Desenvolvimento, Prof. Me. Deivison S. Takatu.
