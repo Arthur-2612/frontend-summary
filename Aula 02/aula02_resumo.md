@@ -106,7 +106,7 @@ package.json  → dependências e scripts
 
 ## Deploy com Vercel
 
-**Deploy** é o processo de disponibilizar uma aplicação em produção. A **Vercel** permite conectar o projeto ao GitHub e realizar deploys automaticamente após novos `pushes`.
+**Deploy** é o processo de disponibilizar uma aplicação em produção. A **Vercel** permite conectar o projeto ao GitHub e realizar deploys automaticamente após novos `pushes`
 
 ### Fluxo
 
