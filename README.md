@@ -28,11 +28,11 @@ Cada pasta representa uma aula e contém um resumo em **Markdown (.md)** com os 
 ## 🚀 Projetos da Disciplina
 Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
 
-| # | Projeto | Repositório | Deploy | Tecnologia |
-|---|---------|--------------|--------|------------|
-| 01 | vannila.js | [🔗 Acessar repositório](https://github.com/Arthur-2612/vannila.js) | — | CSS / JavaScript |
+| # | Projeto | Repositório | Tecnologia |
+|---|---------|--------------|------------|
+| 01 | vannila.js | [🔗 Acessar repositório](https://github.com/Arthur-2612/vannila.js) | CSS / JavaScript |
 | 02 | projeto-react | [🔗 Acessar repositório](https://github.com/Arthur-2612/projeto-react) | React |
-| 03 | — | — | — | — |
+| 03 | — | — | — |
 
 ## 🛠️ Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
