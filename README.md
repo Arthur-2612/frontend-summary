@@ -38,6 +38,8 @@ Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
 | 06 | Aula 03 | meu-projeto-nextjs | [🔗 Repositório](https://github.com/Arthur-2612/meu-projeto-nextjs) | [🌐 Ver online](https://meu-projeto-nextjs-psi.vercel.app/) | Next.js |
 | 07 | Aula 04 | Projetos_API | [🔗 Repositório](https://github.com/Arthur-2612/Projetos_API.git) | Esse repositório contém diversos projetos | React / Node.js (Express) |
 | 08 | Aula 04 | front_express | [🔗 Repositório](https://github.com/Arthur-2612/front_express.git) | [🌐 Ver online](https://front-express-2jyu.vercel.app/) | Express / Node.js |
+| 09 | Aula 05 | projeto-notas-back | [🔗 Repositório](https://github.com/Arthur-2612/projeto-notas-back.git) | [🌐 Ver online](https://projeto-notas-back-1.onrender.com) | Express / Node.js |
+| 10 | Aula 05 | front-notas | [🔗 Repositório](https://github.com/Arthur-2612/front-notas.git) | [🌐 Ver online](https://front-notas-gk0jh72r7-arthur-033b.vercel.app) | React |
 
 ## 🛠️ Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
