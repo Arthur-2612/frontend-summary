@@ -42,11 +42,13 @@ Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
 | 10 | Aula 05 | front-notas | [🔗 Repositório](https://github.com/Arthur-2612/front-notas.git) | [🌐 Ver online](https://front-notas-gk0jh72r7-arthur-033b.vercel.app) | React |
 | 11 | Aula 06 | Sem projeto | - | - | - |
 | 12 | Aula 07 | Projeto-CSS | [🔗 Repositório](https://github.com/Arthur-2612/Projeto-CSS) | [🌐 Ver online](https://projeto-css-mu.vercel.app) | HTML / CSS |
+| 13 | Aula 07 | Projeto---Tailwind | [🔗 Repositório](https://github.com/Arthur-2612/Projeto---Tailwind) | [🌐 Ver online](https://projeto-css-sdgs.vercel.app/) | HTML / Tailwind CSS |
 
 ## 🛠️ Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
 - HTML
 - CSS
+- Tailwind CSS
 - JavaScript
 - React
 - Vue.js
