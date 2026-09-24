@@ -40,7 +40,8 @@ Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
 | 08 | Aula 04 | front_express | [🔗 Repositório](https://github.com/Arthur-2612/front_express.git) | [🌐 Ver online](https://front-express-2jyu.vercel.app/) | Express / Node.js |
 | 09 | Aula 05 | projeto-notas-back | [🔗 Repositório](https://github.com/Arthur-2612/projeto-notas-back.git) | [🌐 Ver online](https://projeto-notas-back-1.onrender.com) | Express / Node.js |
 | 10 | Aula 05 | front-notas | [🔗 Repositório](https://github.com/Arthur-2612/front-notas.git) | [🌐 Ver online](https://front-notas-gk0jh72r7-arthur-033b.vercel.app) | React |
-| 11 | Aula 07 | Projeto-CSS | [🔗 Repositório](https://github.com/Arthur-2612/Projeto-CSS) | [🌐 Ver online](https://projeto-css-mu.vercel.app) | HTML / CSS |
+| 11 | Aula 06 | Sem projeto | - | - | - |
+| 12 | Aula 07 | Projeto-CSS | [🔗 Repositório](https://github.com/Arthur-2612/Projeto-CSS) | [🌐 Ver online](https://projeto-css-mu.vercel.app) | HTML / CSS |
 
 ## 🛠️ Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
